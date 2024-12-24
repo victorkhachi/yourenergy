@@ -21,7 +21,7 @@ export default function Header() {
           <div className="flex items-center">
             <NavLink to="/" className="flex items-center">
               <img width={50} src={Logo} alt="" />
-              <span className="ml-2 text-xl font-bold text-gray-900">YEG</span>
+              <span className="ml-2 text-xl font-bold text-gray-900">Y.E.G</span>
             </NavLink>
           </div>
 
