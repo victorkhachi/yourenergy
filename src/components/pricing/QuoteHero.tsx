@@ -17,7 +17,7 @@ export default function QuoteHero() {
         >
           <h1 className="text-4xl font-bold mb-6">Get Your Custom Solar Solution</h1>
           <p className="text-xl text-gray-300 mb-8">
-            Every project is unique. Let us design a solar system that perfectly matches your needs and budget.
+            Every project is unique. Let us design a solar system that perfectly matches your needs .
           </p>
           <button
             onClick={scrollToForm}

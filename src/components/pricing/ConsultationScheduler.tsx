@@ -20,8 +20,8 @@ export default function ConsultationScheduler() {
         <div className="flex items-start">
           <Video className="h-6 w-6 text-yellow-500 mt-1 mr-4" />
           <div>
-            <h3 className="font-semibold">Virtual Meeting</h3>
-            <p className="text-gray-600">Meet via video call from anywhere</p>
+            <h3 className="font-semibold">Virtual or in person Meeting</h3>
+            <p className="text-gray-600">Meet via video call from anywhere or meet in person</p>
           </div>
         </div>
         <div className="flex items-start">

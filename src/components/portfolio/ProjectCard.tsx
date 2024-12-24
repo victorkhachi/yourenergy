@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
           <div className="flex items-center">
             <Zap className="h-4 w-4 mr-1" />
-            {project.capacity} kW
+            {project.capacity} {project.id=="2"?"Watt":"kW"}
           </div>
           <div className="flex items-center">
             <MapPin className="h-4 w-4 mr-1" />
