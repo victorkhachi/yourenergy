@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const faqs = [
   {
     question: 'How much does a typical solar installation cost?',
-    answer: 'The cost varies based on system size, property type, and location. While there are no definite figures, It depends on your System size,Capacity Required, and What you Qualify for.',
+    answer: 'Solar is not a one size fit all solution.. Costs may vary depending on system sizes and capacity required for the property.. This is solely based on the usage culture of the client. looking at how energy is consumed within a period of time.',
   },
   {
     question: 'Do you offer financing options?',
@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: 'How long does the installation process take?',
-    answer: 'Most residential installations are completed within a days. However County and Energy Company approval is a factor.',
+    answer: 'Installations are completed within a day. This will be after approvals from the county and the energy company are received, and Client availability is confirmed.',
   },
   // {
   //   question: 'What warranties do you offer?',

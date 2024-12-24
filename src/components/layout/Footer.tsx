@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Your Energy Guy</h3>
             <p className="text-gray-400">
-              Y.E.G Solar Solutions have installed over 100 homes in over 8 states like Maryland, DC, Virginia, Texas, Arizona, New Jersey and more.
+              Y.E.G Solar Solutions have installed over 100+ homes in over 8 states like Maryland, DC, Virginia, Texas, Arizona, New Jersey and more.
             </p>
           </div>
 

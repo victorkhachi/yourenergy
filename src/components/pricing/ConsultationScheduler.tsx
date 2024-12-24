@@ -13,7 +13,7 @@ export default function ConsultationScheduler() {
     >
       <h2 className="text-2xl font-bold mb-6">Schedule a Consultation</h2>
       <p className="text-gray-600 mb-8">
-        Book a free  consultation with Your Energy Guy experts to discuss your needs and get personalized recommendations.
+        Book a free online consultation with Your Energy Guy experts, or send a mail for physical reservations to discuss your needs and get personalized recommendations.
       </p>
       
       <div className="space-y-6 mb-8">

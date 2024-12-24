@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { value: '200+', label: 'Installations' },
+  { value: '100+', label: 'Installations' },
   { value: '15M+', label: 'kWh Generated' },
   { value: '30M+', label: 'Cost Savings' },
-  { value: '25K+', label: 'CO₂ Reduced' },
+  { value: '20K+', label: 'CO₂ Reduced' },
 ];
 
 export default function Stats() {
