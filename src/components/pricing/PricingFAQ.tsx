@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const faqs = [
   {
     question: 'How much does a typical solar installation cost?',
-    answer: 'Solar is not a one size fit all solution.. Costs may vary depending on system sizes and capacity required for the property.. This is solely based on the usage culture of the client. looking at how energy is consumed within a period of time.',
+    answer: 'Solar is not a one size fit all solution. Costs may vary depending on system sizes and capacity required for the property. This is solely based on the usage culture of the client, looking at how energy is consumed within a period of time.',
   },
   {
     question: 'Do you offer financing options?',

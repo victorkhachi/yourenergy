@@ -21,7 +21,7 @@ export default function SliderImage({ src, alt, isActive }: SliderImageProps) {
           <img
             src={src}
             alt={alt}
-            className="w-half h-full object-cover"
+            className="w-full h-full object-cover"
             loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50" />
