@@ -48,7 +48,7 @@ export default function ProjectSlider() {
 
   const screen = window.innerWidth
   return (
-    <div style={{minHeight:screen>700?"500px":"245px"}} className="relative  w-full overflow-hidden rounded-lg">
+    <div style={{minHeight:screen>700?"600px":"245px"}} className="relative  w-full overflow-hidden rounded-lg">
       {slides.map((slide, index) => (
         <SliderImage
           key={slide.src}
