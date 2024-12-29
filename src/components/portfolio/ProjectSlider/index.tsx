@@ -41,13 +41,14 @@ export default function ProjectSlider() {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   }, []);
 
-  useEffect(() => {
-    const timer = setInterval(nextSlide, 5000);
-    return () => clearInterval(timer);
-  }, [nextSlide]);
+  // useEffect(() => {
+  //   const timer = setInterval(nextSlide, 5000);
+  //   return () => clearInterval(timer);
+  // }, [nextSlide]);
 
+  const screen = window.innerWidth
   return (
-    <div className="relative h-[500px] w-full overflow-hidden rounded-lg">
+    <div style={{minHeight:screen>700?"500px":"250px"}} className="relative  w-full overflow-hidden rounded-lg">
       {slides.map((slide, index) => (
         <SliderImage
           key={slide.src}

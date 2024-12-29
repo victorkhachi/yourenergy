@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: 'How long does the installation process take?',
-    answer: 'Installations are completed within a day. This will be after approvals from the county and the energy company are received, and Client availability is confirmed.',
+    answer: 'Installations are completed within a day. This will be after approvals from the county and the energy company are received, and client availability is confirmed.',
   },
   // {
   //   question: 'What warranties do you offer?',

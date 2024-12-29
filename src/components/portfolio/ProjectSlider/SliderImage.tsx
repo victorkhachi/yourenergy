@@ -18,12 +18,15 @@ export default function SliderImage({ src, alt, isActive }: SliderImageProps) {
           transition={{ duration: 0.5 }}
           className="absolute inset-0"
         >
-          <img
+          <div className='w-full h-full'>
+            <img
             src={src}
             alt={alt}
             className="w-full h-full object-cover"
             loading="lazy"
           />
+          </div>
+          
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50" />
         </motion.div>
       )}
