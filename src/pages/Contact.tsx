@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Phone, Mail, Calendar } from 'lucide-react';
 import { InlineWidget } from 'react-calendly';
-
+import sampleVideo from "../assets/WhatsApp Video 2025-01-23 at 17.47.20.mp4"
 export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,7 +37,13 @@ export default function Contact() {
       {/* Contact Form & Info */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <video style={{ height: "400px", margin: "24px auto" }} className="w-full max-w-lg rounded-xl shadow-lg" autoPlay loop controls >
+              <source src={sampleVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+
             {/* Contact Information */}
             <div>
               <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
