@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Award } from 'lucide-react';
-
+import DP from "../assets/PHOTO-2025-03-31-16-38-31.jpg"
 export default function About() {
   return (
     <div className="pt-16">
@@ -24,7 +24,53 @@ export default function About() {
 
       {/* Mission & Vision */}
       <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div style={{display:'flex',gap:"24px", flexWrap:"wrap"}}>
+          <p className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
+            Y.E.G Solar Solutions LLC:
+
+            Pioneering a Greener Future
+
+            For years, Y.E.G Solar Solutions LLC, has been at the forefront of the clean energy revolution, helping homeowners and businesses transition to sustainable solar power.
+
+            With a deep commitment to environmental responsibility and energy efficiency, Augustus, widely known as “Your Energy Guy”—has dedicated his career to reducing carbon footprints and making renewable energy accessible to all.
+
+            A Mission for Zero Emissions
+            Y.E.G Solar Solutions was founded on the principle of sustainability, with a clear mission: to provide cost-effective, high-quality solar solutions that help clients cut energy costs while contributing to a cleaner planet.
+
+            Over the years, the team at Y.E.G Solar Solutions LLC have empowered countless homeowners to harness the sun’s power, reducing reliance on fossil fuels and moving toward a net-zero emissions future.
+
+
+            Expertise and Services
+            With a wealth of experience in the renewable energy sector, Y.E.G Solar Solutions LLC specialize in:
+            <ul>
+              <li>
+                ✅ Solar Energy Consulting – Educating clients on the benefits of solar and customizing solutions to fit their energy needs.
+
+              </li>
+              <li>
+                ✅ Solar Sales & Installation – Delivering top-tier solar panel systems designed for long-term efficiency.
+              </li>
+              <li>
+                ✅ EV Charging Solutions – Helping homeowners integrate electric vehicle charging into their sustainable lifestyle.
+
+              </li>
+            </ul>
+
+            Impact and Vision
+
+            Through expert guidance and state-of-the-art solar technology, Y.E.G Solar Solutions has saved customers thousands in energy costs while significantly reducing their carbon emissions.
+
+            Y.E.G Solar Solutions LLC remains committed to innovation, ensuring that every home and business has access to reliable, renewable energy solutions.
+            <br />
+            As we always say, "We’re always here to help.”
+            And with Y.E.G Solar Solutions LLC, the future is bright—powered by the sun.
+          </p>
+          <div style={{minWidth:"40%", width:"40%",margin:"auto"}}>
+            <img src={DP} alt="" />
+          </div>
+        </div>
+      
+        <div style={{marginTop:"24px"}} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
@@ -61,6 +107,8 @@ export default function About() {
             <p className="text-gray-600 mt-2">Licensed and certified for residential and commercial installations</p>
           </motion.div>
         </div>
+
+        
       </section>
     </div>
   );

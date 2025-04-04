@@ -53,6 +53,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold">Phone</h3>
                     <p className="text-gray-600">+1 (571) 4942117</p>
+                    <p className="text-gray-600">+234 813 353 2423
+</p>
                   </div>
                 </div>
                 <div className="flex items-center">
