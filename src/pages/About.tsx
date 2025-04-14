@@ -15,8 +15,10 @@ export default function About() {
           >
             <h1 className="text-4xl font-bold mb-6">About Y.E.G Solar Solutions</h1>
             <p className="text-xl text-gray-300">
-              Y.E.G Solar Solutions is your neighborhood solar company, dedicated to helping homeowners in Maryland, DC, Virginia, Texas, Arizona, New Jersey, and more.
-              We are also in Africa. Taking on projects in Nigeria.
+              <b> Y.E.G Solar Solutions LLC:</b>{" "}
+              Pioneering a Greener Future
+              For years, Y.E.G Solar Solutions LLC, has been at the forefront of the clean energy revolution, helping homeowners and businesses transition to sustainable solar power.
+              With a deep commitment to environmental responsibility and energy efficiency.
             </p>
           </motion.div>
         </div>
@@ -24,16 +26,16 @@ export default function About() {
 
       {/* Mission & Vision */}
       <section className="py-24">
-        <div style={{display:'flex',gap:"24px", flexWrap:"wrap"}}>
-          <p className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
-            Y.E.G Solar Solutions LLC:
-
-            Pioneering a Greener Future
-
-            For years, Y.E.G Solar Solutions LLC, has been at the forefront of the clean energy revolution, helping homeowners and businesses transition to sustainable solar power.
-
-            With a deep commitment to environmental responsibility and energy efficiency, Augustus, widely known as “Your Energy Guy”—has dedicated his career to reducing carbon footprints and making renewable energy accessible to all.
-
+        <div >
+           <div style={{minWidth:"40%", width:"60%",margin:"auto"}}>
+            <img src={DP} alt="" />
+          </div> 
+          <br /><br />
+          <p className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8'>
+            Augustus, widely known as “Your Energy Guy”—has dedicated his career to reducing carbon footprints and making renewable energy accessible to all.
+          </p>
+          <br /><br />
+          <p className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8'>
             A Mission for Zero Emissions
             Y.E.G Solar Solutions was founded on the principle of sustainability, with a clear mission: to provide cost-effective, high-quality solar solutions that help clients cut energy costs while contributing to a cleaner planet.
 
@@ -42,20 +44,25 @@ export default function About() {
 
             Expertise and Services
             With a wealth of experience in the renewable energy sector, Y.E.G Solar Solutions LLC specialize in:
+            <br /><br />
             <ul>
               <li>
                 ✅ Solar Energy Consulting – Educating clients on the benefits of solar and customizing solutions to fit their energy needs.
 
               </li>
+              <br />
               <li>
                 ✅ Solar Sales & Installation – Delivering top-tier solar panel systems designed for long-term efficiency.
               </li>
+              <br />
               <li>
                 ✅ EV Charging Solutions – Helping homeowners integrate electric vehicle charging into their sustainable lifestyle.
 
               </li>
             </ul>
-
+            </p>
+          <br /><br />
+          <p className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8'>
             Impact and Vision
 
             Through expert guidance and state-of-the-art solar technology, Y.E.G Solar Solutions has saved customers thousands in energy costs while significantly reducing their carbon emissions.
@@ -64,10 +71,8 @@ export default function About() {
             <br />
             As we always say, "We’re always here to help.”
             And with Y.E.G Solar Solutions LLC, the future is bright—powered by the sun.
-          </p>
-          <div style={{minWidth:"40%", width:"40%",margin:"auto"}}>
-            <img src={DP} alt="" />
-          </div>
+          </p> 
+          
         </div>
       
         <div style={{marginTop:"24px"}} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
