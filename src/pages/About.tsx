@@ -16,8 +16,10 @@ export default function About() {
           >
             <h1 className="text-4xl font-bold mb-6">About Y.E.G Solar Solutions</h1>
             <p className="text-xl text-gray-300">
-              Y.E.G Solar Solutions is your neighborhood solar company, dedicated to helping homeowners in Maryland, DC, Virginia, Texas, Arizona, New Jersey, and more.
-              We are also in Africa. Taking on projects in Nigeria.
+              <b> Y.E.G Solar Solutions LLC:</b>{" "}
+              Pioneering a Greener Future
+              For years, Y.E.G Solar Solutions LLC, has been at the forefront of the clean energy revolution, helping homeowners and businesses transition to sustainable solar power.
+              With a deep commitment to environmental responsibility and energy efficiency.
             </p>
             <p>
               Pioneering a Greener Future
