@@ -1,4 +1,4 @@
-import React from 'react';
+import Announcement from '../components/Announcement'
 import Hero from '../components/home/Hero';
 import Features from '../components/home/Features';
 import RecentProjects from '../components/home/RecentProjects';
@@ -17,6 +17,7 @@ export default function Home() {
       <Features />
       <Stats />
       <RecentProjects />
+      <Announcement />
       <Testimonials />
     </div>
   );
