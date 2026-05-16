@@ -64,7 +64,7 @@ export default function Features() {
           </div>
           <h2 className="section-title">Full Service Solutions</h2>
           <p className="section-subtitle max-w-2xl mx-auto">
-            From solar installations to complete home remodels, we bring expert craftsmanship
+            From solar installations to complete home remodelling, we bring expert craftsmanship
             and honest service to every single project we take on.
           </p>
         </div>

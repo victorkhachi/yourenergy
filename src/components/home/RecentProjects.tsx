@@ -6,7 +6,7 @@ import { Project } from '../../types';
 import StreetLight from '../../assets/slAbo.jpeg';
 import NeatWork from '../../assets/neatWOrk.jpeg';
 import Roof from '../../assets/rooofTop.jpeg';
-import Banner from '../../assets/banner.jpeg';
+import Banner from '../../assets/img_9190.png';
 
 const recentProjects: Project[] = [
   {
@@ -33,14 +33,14 @@ const recentProjects: Project[] = [
     description: 'Luxury home with integrated solar and premium roofing upgrade.',
     imageUrl: Roof,
   },
-  {
-    id: '4',
-    title: 'Commercial Roofing Project',
-    type: 'commercial',
-    location: 'Maryland',
-    description: 'Full commercial roof replacement with solar-ready preparation.',
-    imageUrl: Banner,
-  },
+  // {
+  //   id: '4',
+  //   title: 'Commercial Roofing Project',
+  //   type: 'commercial',
+  //   location: 'Maryland',
+  //   description: 'Full commercial roof replacement with solar-ready preparation.',
+  //   imageUrl: Banner,
+  // },
 ];
 
 const typeColors: Record<string, string> = {

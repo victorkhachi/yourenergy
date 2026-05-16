@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, ArrowRight, Sun } from 'lucide-react';
 import Logo from '../../assets/freepik_br_d86f6789-b07e-4470-a857-a8265f4d4b49.png';
+import Badge from '../../assets/img_9189.png';
 
 const quickLinks = [
   { to: '/', label: 'Home' },
@@ -54,7 +55,7 @@ export default function Footer() {
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               Your trusted partner for Solar Energy, Roofing, Remodeling, and General Contracting.
-              Serving 8+ states and growing — powered by the sun.
+              Serving 8+ states and growing — LICENCED, BONDED & INSURED. <br /> Licensed in DC, Maryland,  Virginia.
             </p>
             <div className="flex items-center gap-3">
               <a
@@ -84,6 +85,10 @@ export default function Footer() {
               >
                 <Linkedin className="h-4 w-4" />
               </a>
+            </div>
+            
+            <div className="mt-8">
+              <img src={Badge} alt="Accreditation Badge" className="h-20 w-auto object-contain rounded-xl shadow-lg border border-white/5" />
             </div>
           </div>
 
@@ -136,8 +141,9 @@ export default function Footer() {
               <a href="tel:+15714942117" className="flex items-start gap-3 text-slate-400 hover:text-gold-400 transition-colors text-sm">
                 <Phone className="h-4 w-4 mt-0.5 text-gold-500 shrink-0" />
                 <div>
-                  <div>+1 (571) 494-2117</div>
                   <div>+1 (240) 564-9993</div>
+                  <div>+1 (571) 494-2117</div>
+
                   <div className="text-xs text-slate-500">Nigeria: +234 813-353-2423</div>
                 </div>
               </a>

@@ -195,25 +195,32 @@ export default function About() {
             </motion.div>
           </div>
 
-          {/* Team photo */}
+          {/* Real Work. Real Impact. */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative rounded-3xl overflow-hidden border border-white/10"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-navy-800/50 rounded-3xl p-8 md:p-12 border border-white/5"
           >
-            <img
-              src={TeamPhoto}
-              alt="Y.E.G General Contractors LLC team on an active job site"
-              className="w-full h-64 md:h-96 object-cover object-top"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-navy-900/80 to-transparent flex items-center">
-              <div className="p-8 md:p-12 max-w-lg">
-                <h3 className="text-2xl font-bold text-white mb-3">Real Work. Real Impact.</h3>
-                <p className="text-slate-300">
-                  Through expert guidance and the latest solar technology, Y.E.G General Contractors LLC has saved
-                  clients thousands of dollars in energy costs while making a measurable impact on carbon emissions
-                  across the communities we serve.
+            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-navy">
+              <img
+                src={TeamPhoto}
+                alt="Y.E.G General Contractors LLC team on an active job site"
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div>
+              <h3 className="text-3xl font-bold text-white mb-6">Real Work. Real Impact.</h3>
+              <div className="space-y-4 text-slate-300 leading-relaxed text-lg">
+                <p>
+                  Through expert guidance and the latest solar technology, Y.E.G General Contractors LLC has saved clients thousands of dollars in energy costs while making sure structural efficacy is mentioned.
+                </p>
+                <p>
+                  We are more than a service provider we are energy advocates, financial educators, and your full service home improvement partners. This means that every solution we offer is designed with one goal in mind: delivering measurable value for our clients, while ensuring client satisfaction.
+                </p>
+                <p className="font-semibold text-gold-400">
+                  We are your complete home solutions partner.
                 </p>
               </div>
             </div>
