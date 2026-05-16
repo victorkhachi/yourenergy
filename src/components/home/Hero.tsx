@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Play, ChevronDown, Sun, Home, Hammer, HardHat } from 'lucide-react';
 import { motion } from 'framer-motion';
-import sampleVideo from '../../assets/WhatsApp Video 2025-01-23 at 17.47.20.mp4';
+import sampleVideo from '../../assets/remodelling/1f2044e3-9914-46aa-b944-31aa08bfa5cb.mp4';
 
 const pillars = [
   { icon: Sun, label: 'Solar Energy' },

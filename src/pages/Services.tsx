@@ -3,8 +3,17 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   Sun, Home, Hammer, HardHat, Battery, Zap, Shield, Wrench,
-  ArrowRight, CheckCircle2, ChevronDown
+  ArrowRight, CheckCircle2, ChevronDown, Play
 } from 'lucide-react';
+
+import Remodel1 from '../assets/remodelling/2eeb963f-9948-44dd-aaa1-faef8a2c1b32.jpg';
+import Remodel2 from '../assets/remodelling/41d618cd-a4bb-4649-96b6-d65566f3f956.jpg';
+import Remodel3 from '../assets/remodelling/7b5c88ac-55a8-4507-ae0e-acb4150eb2fe.jpg';
+import Remodel4 from '../assets/remodelling/9c1b7be8-8836-44f5-b6bb-7c80a30767ca.jpg';
+import Video1 from '../assets/remodelling/1f2044e3-9914-46aa-b944-31aa08bfa5cb.mp4';
+import Video2 from '../assets/remodelling/9bd7f7ec-0779-4a38-968c-5c0c6b8db065.mp4';
+import Video3 from '../assets/remodelling/9fbb08f6-e9bd-4e40-a320-63e9233d4ee0.mp4';
+import Video4 from '../assets/remodelling/bafb6395-f51a-4493-8773-9195dd0dc59f.mp4';
 
 const services = [
   {
@@ -225,8 +234,8 @@ export default function Services() {
                   id={id}
                   onClick={() => setActive(id)}
                   className={`flex items-center gap-2.5 px-5 py-2.5 rounded-xl text-sm font-medium whitespace-nowrap transition-all border ${active === id
-                      ? `${cm.badge} border-current`
-                      : 'text-slate-400 border-transparent hover:text-slate-200 hover:bg-white/5'
+                    ? `${cm.badge} border-current`
+                    : 'text-slate-400 border-transparent hover:text-slate-200 hover:bg-white/5'
                     }`}
                 >
                   <Icon className="h-4 w-4" />
@@ -308,6 +317,25 @@ export default function Services() {
                 </div>
               </div>
             </div>
+
+            {/* Remodeling Gallery */}
+            {active === 'remodeling' && (
+              <div className="mb-16">
+                <h3 className="text-2xl font-bold text-white mb-6">Our Remodeling Work</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+                  <img src={Remodel1} alt="Remodeling project" className="w-full h-48 object-cover rounded-xl border border-white/10 hover:border-gold-500/30 transition-all cursor-pointer hover:scale-105" />
+                  <img src={Remodel2} alt="Remodeling project" className="w-full h-48 object-cover rounded-xl border border-white/10 hover:border-gold-500/30 transition-all cursor-pointer hover:scale-105" />
+                  <img src={Remodel3} alt="Remodeling project" className="w-full h-48 object-cover rounded-xl border border-white/10 hover:border-gold-500/30 transition-all cursor-pointer hover:scale-105" />
+                  <img src={Remodel4} alt="Remodeling project" className="w-full h-48 object-cover rounded-xl border border-white/10 hover:border-gold-500/30 transition-all cursor-pointer hover:scale-105" />
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <video src={Video1} autoPlay loop muted playsInline className="w-full h-48 object-cover rounded-xl border border-white/10" />
+                  <video src={Video2} autoPlay loop muted playsInline className="w-full h-48 object-cover rounded-xl border border-white/10" />
+                  <video src={Video3} autoPlay loop muted playsInline className="w-full h-48 object-cover rounded-xl border border-white/10" />
+                  <video src={Video4} autoPlay loop muted playsInline className="w-full h-48 object-cover rounded-xl border border-white/10" />
+                </div>
+              </div>
+            )}
 
             {/* FAQs */}
             <div className="card-dark p-8 mb-12">

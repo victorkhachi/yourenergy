@@ -43,7 +43,8 @@ export default function Announcement() {
 
             <p className="text-slate-300 leading-relaxed mb-6">
               ☀️ Y.E.G General Contractors LLC is on a mission to power homes, businesses, and municipalities
-              with clean, affordable energy — and we're hiring! We're looking for driven, energetic,
+              with clean, renewable energy. As we continue to grow across multiple states, we are actively looking for
+              driven, energetic,
               and goal-oriented individuals to join our fast-growing team.
             </p>
 

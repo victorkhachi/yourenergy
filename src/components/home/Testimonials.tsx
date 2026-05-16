@@ -20,10 +20,10 @@ const testimonials = [
     project: 'Residential Solar + Roofing',
   },
   {
-    name: 'Michael Chen',
-    role: 'Business Owner — San Francisco, CA',
+    name: 'Sarah Jenkins',
+    role: 'Commercial Client',
     comment:
-      'Professional team, excellent service, and outstanding results. Our company has seen remarkable savings since installation. Y.E.G General Contractors LLC truly delivers on their promises.',
+      'Professional team, excellent service, and outstanding results. Our company has seen remarkable savings since installation. Y.E.G General Contractors truly delivers on their promises.',
     rating: 5,
     project: 'Commercial Solar',
   },

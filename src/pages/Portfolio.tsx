@@ -12,6 +12,11 @@ import OtherRoof from '../assets/otherRoof.jpeg';
 import RoofSnow from '../assets/roofANdSnow.jpeg';
 import Banner from '../assets/banner.jpeg';
 
+import Remodel1 from '../assets/remodelling/2eeb963f-9948-44dd-aaa1-faef8a2c1b32.jpg';
+import Remodel2 from '../assets/remodelling/41d618cd-a4bb-4649-96b6-d65566f3f956.jpg';
+import Remodel3 from '../assets/remodelling/7b5c88ac-55a8-4507-ae0e-acb4150eb2fe.jpg';
+import Remodel4 from '../assets/remodelling/9c1b7be8-8836-44f5-b6bb-7c80a30767ca.jpg';
+
 type Category = 'all' | 'solar' | 'roofing' | 'remodeling' | 'commercial';
 
 interface EnhancedProject extends Project {
@@ -122,11 +127,51 @@ const projects: EnhancedProject[] = [
     id: '9',
     title: 'Commercial Roofing',
     type: 'commercial',
-    category: 'roofing',
-    location: 'Washington DC Area',
+    category: 'commercial',
+    location: 'Various Locations',
     date: '2024',
-    description: 'Full commercial roofing project with energy-efficient materials and solar prep infrastructure.',
+    description: 'Large scale commercial roofing and solar panel implementation for multiple facilities.',
     imageUrl: Banner,
+  },
+  {
+    id: '10',
+    title: 'Modern Kitchen Remodel',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Bethesda, Maryland',
+    date: '2024',
+    description: 'Complete kitchen renovation featuring custom cabinetry, premium countertops, and modern lighting.',
+    imageUrl: Remodel1,
+  },
+  {
+    id: '11',
+    title: 'Luxury Bathroom Upgrade',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Arlington, Virginia',
+    date: '2024',
+    description: 'Full bathroom gut and remodel with walk-in shower, double vanity, and elegant tile work.',
+    imageUrl: Remodel2,
+  },
+  {
+    id: '12',
+    title: 'Basement Finishing',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Silver Spring, Maryland',
+    date: '2023',
+    description: 'Transformed an unfinished basement into a beautiful living area and home theater.',
+    imageUrl: Remodel3,
+  },
+  {
+    id: '13',
+    title: 'Home Interior Renovation',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Washington, DC',
+    date: '2023',
+    description: 'Comprehensive interior remodel including flooring, painting, and structural improvements.',
+    imageUrl: Remodel4,
   },
 ];
 
