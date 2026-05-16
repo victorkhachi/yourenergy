@@ -4,16 +4,6 @@ import { ArrowRight, Play, ChevronDown, Sun, Home, Hammer, HardHat } from 'lucid
 import { motion } from 'framer-motion';
 import sampleVideo from '../../assets/WhatsApp Video 2025-01-23 at 17.47.20.mp4';
 
-const slides = [
-  {
-    tagline: 'Solar • Roofing • Remodeling • General Contracting',
-    headline: 'Powering Homes.',
-    headline2: 'Building Futures.',
-    sub: 'Y.E.G Solar Solutions is your full-service partner for clean energy, quality roofing, and expert remodeling — trusted by hundreds of homeowners across 8+ states.',
-    bg: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2400&q=80',
-  },
-];
-
 const pillars = [
   { icon: Sun, label: 'Solar Energy' },
   { icon: Home, label: 'Roofing' },
@@ -36,7 +26,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url('${slides[0].bg}')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2400&q=80')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -60,7 +50,7 @@ export default function Hero() {
           >
             <span className="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 text-gold-400 text-xs font-semibold px-4 py-1.5 rounded-full">
               <span className="w-1.5 h-1.5 bg-gold-400 rounded-full animate-pulse" />
-              {slides[0].tagline}
+              Solar, Roofing and General Contractors
             </span>
           </motion.div>
 
@@ -71,7 +61,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-5xl md:text-7xl font-black text-white leading-[1.05] mb-2"
           >
-            {slides[0].headline}
+            Powering Homes.
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -79,7 +69,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="text-5xl md:text-7xl font-black gradient-text leading-[1.05] mb-6"
           >
-            {slides[0].headline2}
+            Building Futures.
           </motion.h1>
 
           {/* Sub */}
@@ -89,7 +79,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg md:text-xl text-slate-300 max-w-2xl mb-10 leading-relaxed"
           >
-            {slides[0].sub}
+            Y.E.G General Contractors LLC is your full service partner for clean energy, quality roofing, and expert remodeling trusted by hundreds of homeowners across 40 states.
           </motion.p>
 
           {/* CTAs */}

@@ -23,7 +23,7 @@ const testimonials = [
     name: 'Michael Chen',
     role: 'Business Owner — San Francisco, CA',
     comment:
-      'Professional team, excellent service, and outstanding results. Our company has seen remarkable savings since installation. Y.E.G Solar Solutions truly delivers on their promises.',
+      'Professional team, excellent service, and outstanding results. Our company has seen remarkable savings since installation. Y.E.G General Contractors LLC truly delivers on their promises.',
     rating: 5,
     project: 'Commercial Solar',
   },
@@ -119,11 +119,10 @@ export default function Testimonials() {
                 <button
                   key={i}
                   onClick={() => setCurrent(i)}
-                  className={`rounded-full transition-all duration-300 ${
-                    i === current
+                  className={`rounded-full transition-all duration-300 ${i === current
                       ? 'w-8 h-2.5 bg-gold-500'
                       : 'w-2.5 h-2.5 bg-white/20 hover:bg-white/40'
-                  }`}
+                    }`}
                 />
               ))}
             </div>

@@ -24,7 +24,7 @@ const services = [
       {
         icon: HardHat,
         name: 'Commercial Solar',
-        desc: 'Large-scale solar solutions for businesses, warehouses, and industrial facilities.',
+        desc: 'Large-scale General Contractors LLC for businesses, warehouses, and industrial facilities.',
       },
       {
         icon: Battery,
@@ -224,11 +224,10 @@ export default function Services() {
                   key={id}
                   id={id}
                   onClick={() => setActive(id)}
-                  className={`flex items-center gap-2.5 px-5 py-2.5 rounded-xl text-sm font-medium whitespace-nowrap transition-all border ${
-                    active === id
+                  className={`flex items-center gap-2.5 px-5 py-2.5 rounded-xl text-sm font-medium whitespace-nowrap transition-all border ${active === id
                       ? `${cm.badge} border-current`
                       : 'text-slate-400 border-transparent hover:text-slate-200 hover:bg-white/5'
-                  }`}
+                    }`}
                 >
                   <Icon className="h-4 w-4" />
                   {title.split(' ')[0]}

@@ -11,7 +11,7 @@ const services = [
     border: 'border-gold-500/20',
     iconColor: 'text-gold-400',
     items: ['Solar Panel Installation', 'Battery Storage Systems', 'Commercial Solar', 'EV Charger Installation'],
-    desc: 'Harness the sun\'s power with top-tier solar systems designed for maximum efficiency and long-term savings.',
+    desc: 'We design and install solar systems built for maximum output and long term savings. Our team handles everything from permits to activation.',
   },
   {
     icon: Home,
@@ -20,7 +20,7 @@ const services = [
     border: 'border-blue-500/20',
     iconColor: 'text-blue-400',
     items: ['Roof Replacement', 'Roof Repairs', 'Storm Damage', 'Insurance Claims Assistance'],
-    desc: 'Expert roofing solutions from full replacements to storm damage repairs — quality guaranteed.',
+    desc: 'From full replacements to storm damage repairs, our licensed roofing team delivers durable results that protect your home for decades.',
   },
   {
     icon: Hammer,
@@ -28,8 +28,8 @@ const services = [
     color: 'from-emerald-500/20 to-emerald-600/5',
     border: 'border-emerald-500/20',
     iconColor: 'text-emerald-400',
-    items: ['Kitchen & Bathrooms', 'Basement Finishing', 'Flooring & Painting', 'Interior Renovations'],
-    desc: 'Transform your living spaces with innovative remodeling solutions that enhance value and comfort.',
+    items: ['Kitchen and Bathrooms', 'Basement Finishing', 'Flooring and Painting', 'Interior Renovations'],
+    desc: 'Transform your living spaces with creative remodeling solutions that improve comfort, functionality, and the overall value of your home.',
   },
   {
     icon: HardHat,
@@ -38,7 +38,7 @@ const services = [
     border: 'border-purple-500/20',
     iconColor: 'text-purple-400',
     items: ['Commercial Projects', 'Residential Construction', 'Project Management', 'Property Improvements'],
-    desc: 'Full-service general contracting for residential and commercial projects of any size or complexity.',
+    desc: 'We manage residential and commercial construction projects from start to finish, coordinating every trade so you do not have to.',
   },
 ];
 
@@ -62,9 +62,10 @@ export default function Features() {
           <div className="gold-badge mb-3">
             <span className="w-6 h-px bg-gold-500" /> What We Do <span className="w-6 h-px bg-gold-500" />
           </div>
-          <h2 className="section-title">Full-Service Solutions</h2>
+          <h2 className="section-title">Full Service Solutions</h2>
           <p className="section-subtitle max-w-2xl mx-auto">
-            From solar installations to complete home remodels — we handle every aspect of your property with expert craftsmanship.
+            From solar installations to complete home remodels, we bring expert craftsmanship
+            and honest service to every single project we take on.
           </p>
         </div>
 

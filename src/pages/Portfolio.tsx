@@ -205,11 +205,10 @@ export default function Portfolio() {
               <button
                 key={key}
                 onClick={() => setCategory(key)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all border ${
-                  category === key
+                className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all border ${category === key
                     ? 'bg-gold-500/15 text-gold-400 border-gold-500/30'
                     : 'text-slate-400 border-transparent hover:text-slate-200 hover:bg-white/5'
-                }`}
+                  }`}
               >
                 {label}
                 <span className={`text-xs px-1.5 py-0.5 rounded-full ${category === key ? 'bg-gold-500/20 text-gold-400' : 'bg-white/10 text-slate-500'}`}>
@@ -380,7 +379,7 @@ export default function Portfolio() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Your Project Could Be Next</h2>
           <p className="text-slate-400 mb-8">
-            Join hundreds of satisfied homeowners and businesses who've trusted Y.E.G Solar Solutions with their properties.
+            Join hundreds of satisfied homeowners and businesses who've trusted Y.E.G General Contractors LLC with their properties.
           </p>
           <Link to="/contact" className="btn-gold gap-2">
             Start Your Project <ArrowRight className="h-5 w-5" />

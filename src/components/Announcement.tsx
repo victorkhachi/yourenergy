@@ -42,7 +42,7 @@ export default function Announcement() {
             </h2>
 
             <p className="text-slate-300 leading-relaxed mb-6">
-              ☀️ Y.E.G Solar Solutions LLC is on a mission to power homes, businesses, and municipalities
+              ☀️ Y.E.G General Contractors LLC is on a mission to power homes, businesses, and municipalities
               with clean, affordable energy — and we're hiring! We're looking for driven, energetic,
               and goal-oriented individuals to join our fast-growing team.
             </p>

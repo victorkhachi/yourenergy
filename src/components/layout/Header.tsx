@@ -58,17 +58,10 @@ export default function Header() {
         <div className="flex justify-between items-center h-18 py-3">
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-3 group">
-            <img
-              src={Logo}
-              alt="Y.E.G Solar Solutions"
-              className="h-12 w-12 object-contain rounded-lg bg-white/5 p-1"
-            />
-            <div className="leading-tight">
-              <span className="block text-lg font-bold text-white group-hover:text-gold-400 transition-colors">
-                Y.E.G Solar
-              </span>
-              <span className="block text-xs text-gold-500 font-medium tracking-wider uppercase">
-                Solutions LLC
+            <img src={Logo} alt="Y.E.G General Contractors" className="h-10 w-10 object-contain rounded-lg bg-white/5 p-1" />
+            <div>
+              <span className="block text-xl font-black text-white leading-none tracking-tight">
+                Y.E.G General Contractors LLC
               </span>
             </div>
           </NavLink>

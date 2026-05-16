@@ -37,8 +37,8 @@ export default function Home() {
                 A Company You Can Trust With Your Biggest Investment
               </h2>
               <p className="text-slate-400 leading-relaxed mb-8">
-                Y.E.G Solar Solutions is more than a contractor — we're your long-term partner in energy, 
-                comfort, and home value. With 100+ completed projects across 8+ states, we bring experience, 
+                Y.E.G General Contractors LLC is more than a contractor — we're your long-term partner in energy,
+                comfort, and home value. With 100+ completed projects across 8+ states, we bring experience,
                 integrity, and craftsmanship to every job.
               </p>
               <div className="flex flex-wrap gap-4">

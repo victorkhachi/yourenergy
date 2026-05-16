@@ -319,7 +319,7 @@ export default function Contact() {
                     className="flex items-center gap-3 text-slate-400 hover:text-gold-400 transition-colors"
                   >
                     <Linkedin className="h-5 w-5" />
-                    <span className="text-sm">Y.E.G Solar Solutions on LinkedIn</span>
+                    <span className="text-sm">Y.E.G General Contractors LLC on LinkedIn</span>
                   </a>
                 </div>
               </div>
@@ -356,7 +356,7 @@ export default function Contact() {
           </div>
           <div className="rounded-2xl overflow-hidden border border-white/10 bg-navy-800">
             <iframe
-              title="Y.E.G Solar Solutions Location Map"
+              title="Y.E.G General Contractors LLC Location Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99313.50280547003!2d-77.03690649999999!3d38.89511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC!5e0!3m2!1sen!2sus!4v1234567890"
               width="100%"
               height="350"

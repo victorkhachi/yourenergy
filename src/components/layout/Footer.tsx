@@ -47,10 +47,9 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-5">
-              <img src={Logo} alt="Y.E.G Solar Solutions" className="h-12 w-12 object-contain rounded-lg bg-white/5 p-1" />
+              <img src={Logo} alt="Y.E.G General Contractors" className="h-12 w-12 object-contain rounded-lg bg-white/5 p-1" />
               <div>
-                <span className="block text-lg font-bold text-white">Y.E.G Solar</span>
-                <span className="block text-xs text-gold-500 font-medium tracking-wider uppercase">Solutions LLC</span>
+                <span className="block text-lg font-bold text-white">Y.E.G General Contractors LLC</span>
               </div>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
@@ -169,10 +168,10 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-500">
           <div className="flex items-center gap-1.5">
             <Sun className="h-3.5 w-3.5 text-gold-500" />
-            <span>© {new Date().getFullYear()} Y.E.G Solar Solutions LLC. All rights reserved.</span>
+            <span>© {new Date().getFullYear()} Y.E.G General Contractors LLC. All rights reserved.</span>
           </div>
           <div className="flex items-center gap-1">
-            <span>Y.E.G Solar Solutions Nigeria Limited</span>
+            <span>Y.E.G General Contractors Nigeria Limited</span>
             <span className="text-slate-700">•</span>
             <span>RC 7408926</span>
           </div>
