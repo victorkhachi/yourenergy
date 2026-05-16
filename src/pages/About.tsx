@@ -13,7 +13,7 @@ const values = [
 ];
 
 const certifications = [
-  'Home Improvement License',
+  'Home Remodeling License',
   'Solar Energy Installer Certified',
   'Maryland Licensed Contractor',
   'Roofing Contractor License',
@@ -129,7 +129,7 @@ export default function About() {
                   Over the years, Y.E.G General Contractors LLC has helped hundreds of homeowners across eight states harness
                   the power of the sun, lower their energy bills, and increase the value of their properties.
                   The company has since expanded into roofing, remodeling, and general contracting, becoming
-                  a true one stop shop for home improvement.
+                  a true one stop shop for home remodeling.
                 </p>
               </div>
 

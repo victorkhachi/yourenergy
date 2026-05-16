@@ -76,7 +76,7 @@ const faqs = [
   },
   {
     q: 'Do you offer financing?',
-    a: 'Yes! We partner with leading solar and home improvement lenders to offer $0 down financing options, allowing you to go solar with no upfront cost and payments that are often less than your current energy bill.',
+    a: 'Yes! We partner with leading solar and home remodeling lenders to offer $0 down financing options, allowing you to go solar with no upfront cost and payments that are often less than your current energy bill.',
   },
   {
     q: 'Is the consultation really free?',
@@ -135,11 +135,10 @@ export default function Pricing() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`relative rounded-2xl p-7 border transition-all ${
-                  pkg.isPopular
+                className={`relative rounded-2xl p-7 border transition-all ${pkg.isPopular
                     ? 'bg-gradient-to-b from-gold-500/15 to-gold-600/5 border-gold-500/40 shadow-gold'
                     : 'card-dark'
-                }`}
+                  }`}
               >
                 {pkg.isPopular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -171,11 +170,10 @@ export default function Pricing() {
                   ))}
                 </ul>
 
-                <Link to="/contact" className={`flex items-center justify-center gap-2 py-3 px-5 rounded-xl font-semibold text-sm transition-all ${
-                  pkg.isPopular
+                <Link to="/contact" className={`flex items-center justify-center gap-2 py-3 px-5 rounded-xl font-semibold text-sm transition-all ${pkg.isPopular
                     ? 'bg-gold-500 hover:bg-gold-400 text-navy-900 shadow-gold'
                     : 'bg-white/5 border border-white/10 hover:border-gold-500/30 text-white hover:text-gold-400'
-                }`}>
+                  }`}>
                   {pkg.cta} <ArrowRight className="h-4 w-4" />
                 </Link>
               </motion.div>
