@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Award, Shield, Star, Users, ArrowRight, CheckCircle2, Sun } from 'lucide-react';
 import DP from '../assets/PHOTO-2025-03-31-16-38-31.jpg';
-import TeamPhoto from '../assets/IMG_9190.png';
+import TeamPhoto from '../assets/img_9190.png';
 
 const values = [
   { icon: Shield, title: 'Integrity', desc: 'We operate with full transparency. No hidden fees, no shortcuts, no surprises. What we quote is what you pay.' },
