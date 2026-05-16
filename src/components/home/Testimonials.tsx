@@ -1,70 +1,153 @@
-import React from 'react';
-import { Star } from 'lucide-react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const testimonials = [
   {
+    name: 'E. Ekanem',
+    role: 'Homeowner — Odenton, Maryland',
+    comment:
+      'Excellent service. The installers were here on time, polite and professional. We now have our State grants, County incentives and SRECs. We are looking forward to filing our taxes to get our 30% grants from the federal government in the next tax window.',
+    rating: 5,
+    project: 'Solar Installation',
+  },
+  {
     name: 'Sarah Johnson',
-    role: 'Homeowner',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    comment: 'The installation was seamless, and our energy bills have dropped significantly. Best investment we\'ve made for our home.',
+    role: 'Homeowner — Fairfax, Virginia',
+    comment:
+      'The installation was seamless, and our energy bills have dropped significantly. The team walked us through every step of the process. Best investment we\'ve made for our home by far.',
+    rating: 5,
+    project: 'Residential Solar + Roofing',
   },
   {
     name: 'Michael Chen',
-    role: 'Business Owner',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    comment: 'Professional team, excellent service, and outstanding results. Our company has seen remarkable savings since installation.',
+    role: 'Business Owner — San Francisco, CA',
+    comment:
+      'Professional team, excellent service, and outstanding results. Our company has seen remarkable savings since installation. Y.E.G Solar Solutions truly delivers on their promises.',
+    rating: 5,
+    project: 'Commercial Solar',
   },
-  // {
-  //   name: 'Emily Rodriguez',
-  //   role: 'Property Manager',
-  //   image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  //   comment: 'SolarPro made the entire process easy and straightforward. The ongoing support has been exceptional.',
-  // },
+  {
+    name: 'David Williams',
+    role: 'Property Manager — Maryland',
+    comment:
+      'From quote to completion, the experience was flawless. They handled the permit process, worked around our schedule, and left the site cleaner than they found it. Highly recommend!',
+    rating: 5,
+    project: 'Roofing & Remodeling',
+  },
 ];
 
 export default function Testimonials() {
+  const [current, setCurrent] = useState(0);
+
+  const prev = () => setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length);
+  const next = () => setCurrent((c) => (c + 1) % testimonials.length);
+
+  const t = testimonials[current];
+
   return (
-    <section className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900">What Our Clients Say</h2>
-          <p className="mt-4 text-xl text-gray-600">Real experiences from satisfied customers</p>
+    <section className="py-24 bg-navy-900 relative overflow-hidden">
+      <div className="absolute inset-0 bg-dot-pattern opacity-15" />
+      {/* Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-gold-500/4 rounded-full blur-3xl" />
+
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-14">
+          <div className="gold-badge mb-3">
+            <span className="w-6 h-px bg-gold-500" /> Testimonials <span className="w-6 h-px bg-gold-500" />
+          </div>
+          <h2 className="section-title">What Our Clients Say</h2>
+          <p className="section-subtitle">Real experiences from real customers across the country.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+
+        {/* Main testimonial card */}
+        <div className="relative">
+          <AnimatePresence mode="wait">
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-white p-8 rounded-lg shadow-md"
+              key={current}
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -40 }}
+              transition={{ duration: 0.4 }}
+              className="bg-navy-800 border border-white/8 rounded-3xl p-8 md:p-12 relative"
             >
-              <div className="flex items-center mb-6">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover"
-                  loading="lazy"
-                />
-                <div className="ml-4">
-                  <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                  <div className="text-gray-500 text-sm">{testimonial.role}</div>
-                </div>
-              </div>
-              <div className="flex mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star 
-                    key={i} 
-                    className="h-5 w-5 text-yellow-400 fill-current" 
-                    aria-hidden="true"
-                  />
+              {/* Quote icon */}
+              <Quote className="h-10 w-10 text-gold-500/20 absolute top-8 right-8" />
+
+              {/* Stars */}
+              <div className="flex gap-1 mb-6">
+                {Array.from({ length: t.rating }).map((_, i) => (
+                  <Star key={i} className="h-5 w-5 text-gold-400 fill-current" />
                 ))}
               </div>
-              <p className="text-gray-600 italic">"{testimonial.comment}"</p>
+
+              {/* Comment */}
+              <p className="text-lg md:text-xl text-slate-200 leading-relaxed mb-8 italic">
+                "{t.comment}"
+              </p>
+
+              {/* Author */}
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center text-navy-900 font-bold text-lg">
+                  {t.name.charAt(0)}
+                </div>
+                <div>
+                  <div className="font-bold text-white">{t.name}</div>
+                  <div className="text-sm text-slate-400">{t.role}</div>
+                </div>
+                <div className="ml-auto">
+                  <span className="text-xs bg-gold-500/10 border border-gold-500/20 text-gold-400 px-3 py-1.5 rounded-full font-medium">
+                    {t.project}
+                  </span>
+                </div>
+              </div>
             </motion.div>
-          ))}
+          </AnimatePresence>
+
+          {/* Nav buttons */}
+          <div className="flex items-center justify-between mt-8">
+            <button
+              onClick={prev}
+              className="w-11 h-11 rounded-xl border border-white/10 hover:border-gold-500/30 flex items-center justify-center text-slate-400 hover:text-gold-400 transition-all"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+
+            {/* Dots */}
+            <div className="flex gap-2">
+              {testimonials.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrent(i)}
+                  className={`rounded-full transition-all duration-300 ${
+                    i === current
+                      ? 'w-8 h-2.5 bg-gold-500'
+                      : 'w-2.5 h-2.5 bg-white/20 hover:bg-white/40'
+                  }`}
+                />
+              ))}
+            </div>
+
+            <button
+              onClick={next}
+              className="w-11 h-11 rounded-xl border border-white/10 hover:border-gold-500/30 flex items-center justify-center text-slate-400 hover:text-gold-400 transition-all"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </button>
+          </div>
+        </div>
+
+        {/* Google reviews badge */}
+        <div className="text-center mt-10">
+          <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 rounded-2xl px-6 py-3">
+            <div className="flex gap-0.5">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star key={i} className="h-4 w-4 text-gold-400 fill-current" />
+              ))}
+            </div>
+            <span className="text-sm font-semibold text-white">5.0</span>
+            <span className="text-sm text-slate-400">on Google Reviews</span>
+          </div>
         </div>
       </div>
     </section>

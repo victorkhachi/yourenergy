@@ -1,125 +1,280 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Award } from 'lucide-react';
-import DP from "../assets/PHOTO-2025-03-31-16-38-31.jpg"
+import { Award, Shield, Star, Users, ArrowRight, CheckCircle2, Sun } from 'lucide-react';
+import DP from '../assets/PHOTO-2025-03-31-16-38-31.jpg';
+import Banner2 from '../assets/banner2.jpeg';
+
+const values = [
+  { icon: Shield, title: 'Integrity', desc: 'We operate with full transparency — no hidden fees, no shortcuts, ever.' },
+  { icon: Star, title: 'Excellence', desc: 'Every project receives our full attention and highest quality workmanship.' },
+  { icon: Users, title: 'Community', desc: 'We invest in the communities we serve, building lasting relationships.' },
+  { icon: Sun, title: 'Sustainability', desc: 'Our mission is to accelerate the transition to clean, renewable energy.' },
+];
+
+const certifications = [
+  'Home Improvement License',
+  'Solar Energy Installer Certified',
+  'Maryland Licensed Contractor',
+  'Roofing Contractor License',
+  'General Contractor License',
+  'NABCEP Certified',
+];
+
+const specialties = [
+  'Solar Energy Consulting',
+  'Solar Sales & Installation',
+  'Roofing Replacement & Repairs',
+  'Home Remodeling Projects',
+  'EV Charging Solutions',
+  'Commercial Contracting',
+  'Battery Storage Systems',
+  'Storm Damage Restoration',
+];
+
 export default function About() {
   return (
-    <div className="pt-16">
-      {/* Hero Section */}
-      <section className="bg-gray-900 text-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-navy-900 pt-20">
+      {/* Hero */}
+      <section className="relative py-24 overflow-hidden">
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=2400&q=80')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          <div className="absolute inset-0 bg-navy-900/85" />
+        </div>
+        <div className="absolute inset-0 bg-dot-pattern opacity-10" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
             className="max-w-3xl"
           >
-            <h1 className="text-4xl font-bold mb-6">About Y.E.G Solar Solutions</h1>
-            <p className="text-xl text-gray-300">
-              <b> Y.E.G Solar Solutions LLC:</b>{" "}
-              Pioneering a Greener Future
-              For years, Y.E.G Solar Solutions LLC, has been at the forefront of the clean energy revolution, helping homeowners and businesses transition to sustainable solar power.
-              With a deep commitment to environmental responsibility and energy efficiency.
+            <div className="gold-badge mb-4">
+              <span className="w-6 h-px bg-gold-500" /> Our Story
+            </div>
+            <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+              About Y.E.G Solar Solutions
+            </h1>
+            <p className="text-xl text-slate-300 leading-relaxed mb-8">
+              Pioneering a greener, stronger future — one home and business at a time.
+              We are your full-service Solar, Roofing, Remodeling, and General Contracting partner.
             </p>
-            <p>
-              Pioneering a Greener Future
-              For years, Y.E.G Solar Solutions LLC, has been at the forefront of the clean energy revolution, helping homeowners and businesses transition to sustainable solar power.
-              With a deep commitment to environmental responsibility and energy efficiency.
-            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link to="/contact" className="btn-gold gap-2">
+                Get a Free Estimate <ArrowRight className="h-5 w-5" />
+              </Link>
+              <Link to="/portfolio" className="btn-outline gap-2">
+                View Our Work
+              </Link>
+            </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Story Section */}
+      <section className="py-24 bg-navy-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Image */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative"
+            >
+              <div className="absolute -inset-4 bg-gold-500/8 rounded-3xl blur-2xl" />
+              <img
+                src={DP}
+                alt="Augustus — Your Energy Guy"
+                className="relative w-full rounded-2xl border border-white/10 shadow-navy object-cover"
+              />
+              <div className="absolute bottom-6 left-6 right-6 bg-navy-900/90 backdrop-blur-sm border border-white/10 rounded-xl p-4">
+                <div className="font-bold text-white">Augustus</div>
+                <div className="text-gold-400 text-sm font-medium">Founder & CEO — "Your Energy Guy"</div>
+              </div>
+            </motion.div>
+
+            {/* Text */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <div className="gold-badge mb-4">
+                <span className="w-6 h-px bg-gold-500" /> Our Founder
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
+                Meet Your Energy Guy
+              </h2>
+              <div className="space-y-4 text-slate-300 leading-relaxed">
+                <p>
+                  Augustus — widely known as <span className="text-gold-400 font-semibold">"Your Energy Guy"</span> — 
+                  has dedicated his career to reducing carbon footprints and making renewable energy accessible to all.
+                </p>
+                <p>
+                  Y.E.G Solar Solutions was founded on the principle of sustainability, with a clear mission: to provide 
+                  cost-effective, high-quality solar solutions that help clients cut energy costs while contributing to 
+                  a cleaner planet.
+                </p>
+                <p>
+                  Over the years, the team at Y.E.G Solar Solutions LLC have empowered countless homeowners to harness 
+                  the sun's power, reducing reliance on fossil fuels and moving toward a net-zero emissions future.
+                </p>
+              </div>
+
+              <div className="mt-8 grid grid-cols-2 gap-3">
+                {specialties.map((s) => (
+                  <div key={s} className="flex items-center gap-2 text-sm text-slate-300">
+                    <CheckCircle2 className="h-4 w-4 text-gold-400 shrink-0" />
+                    {s}
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-24">
-        <div >
-          <div style={{ minWidth: "40%", width: "60%", margin: "auto" }}>
-            <img src={DP} alt="" />
-          </div>
-          <br /><br />
-          <p className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8'>
-            Augustus, widely known as “Your Energy Guy”—has dedicated his career to reducing carbon footprints and making renewable energy accessible to all.
-          </p>
-          <br /><br />
-          <p className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8'>
-            A Mission for Zero Emissions
-            Y.E.G Solar Solutions was founded on the principle of sustainability, with a clear mission: to provide cost-effective, high-quality solar solutions that help clients cut energy costs while contributing to a cleaner planet.
-
-            Over the years, the team at Y.E.G Solar Solutions LLC have empowered countless homeowners to harness the sun’s power, reducing reliance on fossil fuels and moving toward a net-zero emissions future.
-
-
-            Expertise and Services
-            With a wealth of experience in the renewable energy sector, Y.E.G Solar Solutions LLC specialize in:
-            <br /><br />
-            <ul>
-              <li>
-                <b style={{color:"orange"}}>Solar Energy Consulting </b>– Educating clients on the benefits of solar and customizing solutions to fit their energy needs.
-
-              </li>
-              <br />
-              <li>
-                <b style={{ color: "orange" }}>Solar Sales & Installation </b>– Delivering top-tier solar panel systems designed for long-term efficiency.
-              </li>
-              <br />
-              <li>
-                <b style={{ color: "orange" }}> EV Charging Solutions </b>– Helping homeowners integrate electric vehicle charging into their sustainable lifestyle.
-
-              </li>
-            </ul>
-          </p>
-          <br /><br /> <h3 className=' mx-auto px-4 sm:px-6 lg:px-8' style={{fontSize:"24px" }}>Impact and Vision</h3>
-          <p className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8'>
-           
-
-            Through expert guidance and state-of-the-art solar technology, Y.E.G Solar Solutions has saved customers thousands in energy costs while significantly reducing their carbon emissions.
-
-            Y.E.G Solar Solutions LLC remains committed to innovation, ensuring that every home and business has access to reliable, renewable energy solutions.
-            <br />
-            As we always say, "We’re always here to help.”
-            And with Y.E.G Solar Solutions LLC, the future is bright—powered by the sun.
-          </p>
-
-        </div>
-
-        <div style={{ marginTop: "24px" }} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
-              <p className="text-gray-600">
-                To accelerate the world's transition to sustainable energy through accessible,
-                innovative solar solutions that empower homes and businesses to achieve energy independence.
-              </p>
+      <section className="py-24 bg-navy-900 relative">
+        <div className="absolute inset-0 bg-dot-pattern opacity-10" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <div className="gold-badge mb-3">
+              <span className="w-6 h-px bg-gold-500" /> Mission & Vision
             </div>
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
-              <p className="text-gray-600">
-                A world where clean, renewable energy is the standard, not the alternative.
-                We envision communities powered entirely by sustainable energy sources.
-              </p>
-            </div>
+            <h2 className="section-title">What Drives Us</h2>
           </div>
-        </div>
-      </section>
 
-      {/* Certification */}
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-16">Our Certification</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="card-dark p-8"
+            >
+              <div className="w-12 h-12 rounded-xl bg-gold-500/15 border border-gold-500/20 flex items-center justify-center mb-5">
+                <Sun className="h-6 w-6 text-gold-400" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
+              <p className="text-slate-400 leading-relaxed">
+                To provide high-quality, trustworthy, and sustainable construction and energy solutions 
+                while building long-term relationships through professionalism, integrity, and excellent service.
+                We're committed to helping homeowners and businesses improve their properties through quality 
+                workmanship, energy efficiency, and innovative building solutions.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="card-dark p-8"
+            >
+              <div className="w-12 h-12 rounded-xl bg-blue-500/15 border border-blue-500/20 flex items-center justify-center mb-5">
+                <Star className="h-6 w-6 text-blue-400" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">Our Vision</h3>
+              <p className="text-slate-400 leading-relaxed">
+                A world where clean, renewable energy is the standard — not the alternative. We envision 
+                communities powered entirely by sustainable energy sources, where every homeowner has access 
+                to reliable, cost-effective energy solutions. As we always say: <span className="text-white italic">"We're always here to help."</span>
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Team photo */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-white p-6 rounded-lg shadow-md text-center max-w-lg mx-auto"
+            className="relative rounded-3xl overflow-hidden border border-white/10"
           >
-            <div className="text-yellow-500 mb-4 inline-block">
-              <Award className="h-12 w-12" />
+            <img
+              src={Banner2}
+              alt="Y.E.G Solar Solutions team at work"
+              className="w-full h-64 md:h-80 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-navy-900/80 to-transparent flex items-center">
+              <div className="p-8 md:p-12 max-w-lg">
+                <h3 className="text-2xl font-bold text-white mb-3">Impact and Vision</h3>
+                <p className="text-slate-300">
+                  Through expert guidance and state-of-the-art solar technology, Y.E.G Solar Solutions has saved 
+                  customers thousands in energy costs while significantly reducing their carbon emissions.
+                </p>
+              </div>
             </div>
-            <h3 className="text-xl font-semibold">Home Improvement License</h3>
-            <p className="text-gray-600 mt-2">Licensed and certified for residential and commercial installations</p>
           </motion.div>
         </div>
+      </section>
 
+      {/* Core Values */}
+      <section className="py-24 bg-navy-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="gold-badge mb-3">
+              <span className="w-6 h-px bg-gold-500" /> Our Values
+            </div>
+            <h2 className="section-title">What We Stand For</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {values.map(({ icon: Icon, title, desc }, i) => (
+              <motion.div
+                key={title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="card-dark p-6 text-center hover:border-gold-500/20"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center mx-auto mb-4">
+                  <Icon className="h-7 w-7 text-gold-400" />
+                </div>
+                <h3 className="text-white font-bold text-lg mb-2">{title}</h3>
+                <p className="text-slate-400 text-sm leading-relaxed">{desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
+      {/* Certifications */}
+      <section className="py-20 bg-navy-900 relative">
+        <div className="absolute inset-0 bg-dot-pattern opacity-10" />
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="gold-badge mb-4 justify-center">
+            <span className="w-6 h-px bg-gold-500" /> Certified & Licensed <span className="w-6 h-px bg-gold-500" />
+          </div>
+          <h2 className="section-title mb-10">Our Certifications</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {certifications.map((cert) => (
+              <div
+                key={cert}
+                className="flex items-center gap-2 bg-navy-800 border border-white/10 hover:border-gold-500/30 rounded-xl px-5 py-3 text-sm text-slate-300 hover:text-gold-400 transition-all"
+              >
+                <Award className="h-4 w-4 text-gold-400 shrink-0" />
+                {cert}
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <p className="text-gold-400 text-xl font-semibold italic mb-2">
+              "The future is bright — powered by the sun."
+            </p>
+            <p className="text-slate-500 text-sm">— Y.E.G Solar Solutions LLC</p>
+          </div>
+        </div>
       </section>
     </div>
   );
