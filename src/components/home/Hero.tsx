@@ -79,7 +79,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg md:text-xl text-slate-300 max-w-2xl mb-10 leading-relaxed"
           >
-            Y.E.G General Contractors LLC is your full service partner for clean energy, quality roofing, and expert remodeling trusted by hundreds of homeowners across 40 states.
+            Y.E.G General Contractors LLC is your full service partner for clean energy, quality roofing, and expert remodeling trusted by hundreds of homeowners across the United States.
           </motion.p>
 
           {/* CTAs */}
