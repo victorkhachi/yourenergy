@@ -17,6 +17,18 @@ import Remodel2 from '../assets/remodelling/41d618cd-a4bb-4649-96b6-d65566f3f956
 import Remodel3 from '../assets/remodelling/7b5c88ac-55a8-4507-ae0e-acb4150eb2fe.jpg';
 import Remodel4 from '../assets/remodelling/9c1b7be8-8836-44f5-b6bb-7c80a30767ca.jpg';
 
+import Finished1 from '../assets/yeg/finished1.jpg';
+import Finished2 from '../assets/yeg/finished2.jpg';
+import Finished3 from '../assets/yeg/finished3.jpg';
+import Yeg1 from '../assets/yeg/12bc1ff1-7494-4050-81ca-f95cba6bc686.jpg';
+import Yeg2 from '../assets/yeg/25bad567-103e-444a-86ac-17349ad99899 2.jpg';
+import Yeg3 from '../assets/yeg/25bad567-103e-444a-86ac-17349ad99899.jpg';
+import Yeg4 from '../assets/yeg/71450cb3-7bec-4ef1-893f-78165e557da3.jpg';
+import Yeg5 from '../assets/yeg/d0f33266-8928-47ff-b6de-61a458cff9e8.jpg';
+import Yeg6 from '../assets/yeg/ddb7d83c-d29a-4504-be19-5c63f6c61331 2.jpg';
+import Yeg7 from '../assets/yeg/ddb7d83c-d29a-4504-be19-5c63f6c61331 3.jpg';
+import Yeg8 from '../assets/yeg/ddb7d83c-d29a-4504-be19-5c63f6c61331.jpg';
+
 type Category = 'all' | 'solar' | 'roofing' | 'remodeling' | 'commercial';
 
 interface EnhancedProject extends Project {
@@ -173,6 +185,116 @@ const projects: EnhancedProject[] = [
     description: 'Comprehensive interior remodel including flooring, painting, and structural improvements.',
     imageUrl: Remodel4,
   },
+  {
+    id: '14',
+    title: 'Recent Project 1',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Maryland',
+    date: '2026',
+    description: 'Recently completed project showcasing our commitment to quality craftsmanship.',
+    imageUrl: Finished1,
+  },
+  {
+    id: '15',
+    title: 'Recent Project 2',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Maryland',
+    date: '2026',
+    description: 'Recently completed project showcasing our commitment to quality craftsmanship.',
+    imageUrl: Finished2,
+  },
+  {
+    id: '16',
+    title: 'Recent Project 3',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Maryland',
+    date: '2026',
+    description: 'Recently completed project showcasing our commitment to quality craftsmanship.',
+    imageUrl: Finished3,
+  },
+  {
+    id: '17',
+    title: 'Remodeling Project 4',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Maryland',
+    date: '2026',
+    description: 'Recently completed project showcasing our commitment to quality craftsmanship.',
+    imageUrl: Yeg1,
+  },
+  {
+    id: '18',
+    title: 'Remodeling Project 5',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Maryland',
+    date: '2026',
+    description: 'Recently completed project showcasing our commitment to quality craftsmanship.',
+    imageUrl: Yeg2,
+  },
+  {
+    id: '19',
+    title: 'Remodeling Project 6',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Maryland',
+    date: '2026',
+    description: 'Recently completed project showcasing our commitment to quality craftsmanship.',
+    imageUrl: Yeg3,
+  },
+  {
+    id: '20',
+    title: 'Remodeling Project 7',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Maryland',
+    date: '2026',
+    description: 'Recently completed project showcasing our commitment to quality craftsmanship.',
+    imageUrl: Yeg4,
+  },
+  {
+    id: '21',
+    title: 'Remodeling Project 8',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Maryland',
+    date: '2026',
+    description: 'Recently completed project showcasing our commitment to quality craftsmanship.',
+    imageUrl: Yeg5,
+  },
+  {
+    id: '22',
+    title: 'Remodeling Project 9',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Maryland',
+    date: '2026',
+    description: 'Recently completed project showcasing our commitment to quality craftsmanship.',
+    imageUrl: Yeg6,
+  },
+  {
+    id: '23',
+    title: 'Remodeling Project 10',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Maryland',
+    date: '2026',
+    description: 'Recently completed project showcasing our commitment to quality craftsmanship.',
+    imageUrl: Yeg7,
+  },
+  {
+    id: '24',
+    title: 'Remodeling Project 11',
+    type: 'residential',
+    category: 'remodeling',
+    location: 'Maryland',
+    date: '2026',
+    description: 'Recently completed project showcasing our commitment to quality craftsmanship.',
+    imageUrl: Yeg8,
+  },
 ];
 
 const categories: { key: Category; label: string; count: number }[] = [
@@ -251,8 +373,8 @@ export default function Portfolio() {
                 key={key}
                 onClick={() => setCategory(key)}
                 className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all border ${category === key
-                    ? 'bg-gold-500/15 text-gold-400 border-gold-500/30'
-                    : 'text-slate-400 border-transparent hover:text-slate-200 hover:bg-white/5'
+                  ? 'bg-gold-500/15 text-gold-400 border-gold-500/30'
+                  : 'text-slate-400 border-transparent hover:text-slate-200 hover:bg-white/5'
                   }`}
               >
                 {label}
